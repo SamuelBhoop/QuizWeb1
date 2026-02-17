@@ -6,7 +6,7 @@ namespace Quiz1Web.Models
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Debe ingresar el nombre del concierto")]
+        [Required(ErrorMessage = "Debe ingresar el nombre del libro")]
         [MinLength(2, ErrorMessage = "La cantidad mínima es 1")]
 
         public String Nombre { get; set; }

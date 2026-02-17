@@ -48,7 +48,10 @@ namespace Quiz1Web.Controllers
             return CreatedAtAction(nameof(getById),
                 new { id = newLibro.Id }, newLibro);
 
-
         }
+
+        //public IActionResult actionResult(int id) { 
+           // return 
+        //}
     }
 }

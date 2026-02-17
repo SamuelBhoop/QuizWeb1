@@ -23,6 +23,12 @@ namespace Quiz1Web.Controllers
         }
 
         [HttpGet]
+        public IActionResult GetAll()
+        {
+            return Ok(libros);
+        }
+
+        [HttpGet]
         public string Get()
         {
             return "Funciona a punta de fe";
@@ -49,9 +55,5 @@ namespace Quiz1Web.Controllers
                 new { id = newLibro.Id }, newLibro);
 
         }
-
-        //public IActionResult actionResult(int id) { 
-           // return 
-        //}
     }
 }
